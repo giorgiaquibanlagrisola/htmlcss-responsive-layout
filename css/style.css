@@ -15,6 +15,65 @@ html {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
+    padding: 0 20px;
+}
+
+/*
+   HEADER
+*/
+header {
+    background-color: #0084FD;
+    color: white;
+}
+
+#main-nav-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+#main-nav-container nav {
+    display: none;
+}
+#main-nav-container nav li {
+    display: inline-block;
+}
+#main-nav-container nav li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+
+
+/*
+   MAIN
+*/
+
+
+/*
+   FOOTER
+*/
+
+
+/*
+    MEDIA QUERY
+*/
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+    
+}
+
+/* DESKTOP */
+@media screen and (min-width: 992px) {
+    
+    #main-nav-container nav {
+       display: block;
+    }
+
+    #hamburger-container {
+        display: none;
+    }
 }
