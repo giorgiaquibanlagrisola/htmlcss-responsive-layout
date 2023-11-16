@@ -20,12 +20,38 @@ html {
     padding: 0 20px;
 }
 
+.my-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.my-col {
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.bg-main {
+    background-color: #0084FD;
+}
+
+.bg-main-light {
+    background-color: #B5DDFF;
+}
+
+.bg-secondary {
+    background-color: #9792E4;
+}
+
 /*
    HEADER
 */
 header {
-    background-color: #0084FD;
     color: white;
+    margin-bottom: 20px;
 }
 
 #main-nav-container {
@@ -50,6 +76,10 @@ header {
 /*
    MAIN
 */
+.my-col-card { 
+    text-align: center;
+
+}
 
 
 /*
@@ -63,7 +93,14 @@ header {
 
 /* TABLET */
 @media screen and (min-width: 768px) {
+
+    .my-col-tablet-33 {
+        width: calc((100% / 3) - 20px);
+    }
     
+    .my-col-tablet-66 {
+        width: calc(((100% / 3) * 2) - 20px);
+    }
 }
 
 /* DESKTOP */
@@ -75,5 +112,9 @@ header {
 
     #hamburger-container {
         display: none;
+    }
+
+    .my-col-big {
+        width: calc(((100% / 3) * 2) - 20px);
     }
 }
